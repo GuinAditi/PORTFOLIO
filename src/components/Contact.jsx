@@ -1,6 +1,3 @@
-
-
-
     import React, { useRef } from 'react';
     import emailjs from 'emailjs-com';
 
@@ -14,13 +11,14 @@
         'service_yhh7pov',      
         'template_mb7tayi',     
         form.current,
-        ZQ9yG1Jr0ZIAFVVv5      
+        'ZQ9yG1Jr0ZIAFVVv5'      
         )
         .then(
         () => {
             alert('Message sent successfully!');
         },
         (error) => {
+              console.error('EmailJS error:', error);
             alert('Failed to send message. Error: ' + error.text);
         }
         );
