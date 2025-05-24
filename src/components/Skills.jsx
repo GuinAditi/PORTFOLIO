@@ -17,8 +17,8 @@ const skills = [
 ];
 
 const SkillBox = ({ image, title }) => (
-  <article className='bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg text-center hover:bg-purple-800 transition-all duration-300'>
-    <figure className='flex justify-center mb-4'>
+  <article className='bg-gray-800 p-4 sm:p-6 rounded-lg shadow-lg text-center hover:shadow-[0_0_15px_rgba(205,60,245,0.6)] transition-all duration-300'>
+    <figure className='flex justify-center mb-4 transition-transform duration-300 hover:scale-110'>
       <img src={image} alt={title} className='w-16 h-16 sm:w-20 sm:h-20' />
     </figure>
     <header>

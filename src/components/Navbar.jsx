@@ -10,7 +10,9 @@ export default function Navbar(){
         {id:1,name:'Home',link:'#home'},
         {id:2,name:'About',link:'#about'},
         {id:3,name:'Skills',link:'#Skills'},
-        {id:4,name:'Project',link:'#projects'},
+        {id:4,name:'Project',link:'#Project'},
+      
+
     ];
 
 
@@ -36,9 +38,9 @@ export default function Navbar(){
                         {link.name}
                     </a>
                 ))}
-               <button className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg'>
+               <a href="#contact" className='inline-flex text-white border-2 py-2 px-6 focus:outline-none hover:bg-purple-800 rounded-full text-lg'>
   Contact
-</button>
+</a>
 
             </nav>
         </div>
